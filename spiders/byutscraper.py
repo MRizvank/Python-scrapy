@@ -9,7 +9,7 @@ class byutspider(scrapy.Spider):
     def __init__(self):
         url='https://www.bayut.com/to-rent/property/dubai/page-'
 
-        for page in range(1,3):
+        for page in range(1,50):
             self.start_urls.append(url + str(page))
         print(self.start_urls)    
 
